@@ -39,8 +39,8 @@ class OfferItemAdapter(
         fun bindData(offerListItem:OfferItemModel){
             binding.itemName.text = offerListItem.name
             binding.itemBrand.text = offerListItem.brand
-            binding.itemAttrName.text = offerListItem.attributes[itemId.toInt()].name
-            binding.itemAttrValue.text = offerListItem.attributes[itemId.toInt()].value
+            binding.itemAttrName.text = offerListItem.attributes[position].name
+            binding.itemAttrValue.text = offerListItem.attributes[position].value
             Glide.with(binding.root).load(offerListItem.image).into(binding.itemImage)
         }
        /* init {
