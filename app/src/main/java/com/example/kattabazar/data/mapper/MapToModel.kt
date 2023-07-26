@@ -16,7 +16,7 @@ fun OfferListResponse.mapToOfferListModel():OffersListModel{
 fun OfferItemResponse.mapToOfferItemModel():OfferItemModel{
     return OfferItemModel(
         id = id,
-        name = name,
+        itemName = itemName,
         brand = brand,
         category = category,
         merchant = merchant,
@@ -27,7 +27,7 @@ fun OfferItemResponse.mapToOfferItemModel():OfferItemModel{
 
 fun AttributesItemResponse.mapToAttributesItemModel():AttributesItemModel{
     return  AttributesItemModel(
-        name = name,
+        name = attributeName,
         value = value
     )
 }

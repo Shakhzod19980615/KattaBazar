@@ -1,12 +1,12 @@
 package com.example.kattabazar.di.response
 
 import kotlinx.serialization.SerialName
-
+@kotlinx.serialization.Serializable
 data class OfferItemResponse(
     @SerialName("id")
     val id : Int,
     @SerialName("name")
-    val name : String,
+    val itemName : String,
     @SerialName("brand")
     val brand : String,
     @SerialName("category")

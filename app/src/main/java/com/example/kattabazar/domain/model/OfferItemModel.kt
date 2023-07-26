@@ -2,7 +2,7 @@ package com.example.kattabazar.domain.model
 
 class OfferItemModel(
     val id : Int,
-    val name : String,
+    val itemName : String,
     val brand : String,
     val category : String,
     val merchant : String,

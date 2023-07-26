@@ -37,7 +37,7 @@ class OfferItemAdapter(
         private var binding : OfferItemBinding
     ):RecyclerView.ViewHolder(binding.root){
         fun bindData(offerListItem:OfferItemModel){
-            binding.itemName.text = offerListItem.name
+            binding.itemName.text = offerListItem.itemName
             binding.itemBrand.text = offerListItem.brand
             binding.itemAttrName.text = offerListItem.attributes[position].name
             binding.itemAttrValue.text = offerListItem.attributes[position].value
